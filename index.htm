@@ -144,39 +144,41 @@
     <!-- Início do conteúdo da página -->
     <div class="container-fluid">
         <p class="tamanho-2"><span class="fas fa-cogs"></span> Funções mais utilizadas</p>
-<div class="row">
-    <div class="col-1">
-            <button type="button" class="btn"><span class="fas fa-chevron-circle-left"></span></button>
-    </div>
-    <div id="funcoes" class="col-10">
+        <div class="row">
+            <div class="col-1">
+                <button type="button" class="btn"><span class="fas fa-chevron-circle-left"></span></button>
+            </div>
+            <div id="funcoes" class="col-10">
 
-    </div>
-    <div class="col-1">
-            <button type="button" class="btn"><span class="fas fa-chevron-circle-right"></span></button>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn"><span class="fas fa-chevron-circle-right"></span></button>
 
-    </div>
-</div>
-        <!-- <button type="button" class="btn"><span class="fas fa-chevron-circle-left"></span></button>
-        <button type="button" class="btn btn-outline-secondary">Mudar empresa</button>
-        <button type="button" class="btn btn-outline-secondary">Pedidos enviados</button>
-        <button type="button" class="btn btn-outline-secondary">Minhas empresas</button>
-        <button type="button" class="btn"><span class="fas fa-chevron-circle-right"></span></button> -->
-        
+            </div>
+        </div>
         <p class="tamanho-2"><span class="fas fa-chart-bar"></span> Meus indicadores</p>
         <div class="card">
             <div class="card-header">
                 <span class="tamanho-1">
-                    <b>Performance</b> - últimos x dias
+                    <b>Performance</b> - últimos 31 dias
                 </span>
                 <span class="fas fa-sync-alt tamanho-1 pull-right"></span>
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-8 text-center">
-                        <span class="tamanho-1">
-                            Posição diária
-                        </span>
-                        <div id="grafico"></div>
+                        <div class="row">
+                            <div class="col">
+                                <span class="tamanho-1">
+                                    Posição diária
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <canvas id="grafico" class="w-100 h-100" style="border: 1px solid #000000"></canvas>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
                         <span class="tamanho-1">

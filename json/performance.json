@@ -1,104 +1,104 @@
 {
     "performance": [
         {
-            "data": "03/09",
-            "no_prazo": "70",
-            "informacao": "40"
+            "data": "2018-09-03",
+            "no_prazo": 70,
+            "informacao": 40
         },
         {
-            "data": "04/09",
-            "no_prazo": "80",
-            "informacao": "50"
+            "data": "2018-09-04",
+            "no_prazo": 80,
+            "informacao": 50
         },
         {
-            "data": "05/09",
-            "no_prazo": "100",
-            "informacao": "10"
+            "data": "2018-09-05",
+            "no_prazo": 100,
+            "informacao": 10
         },
         {
-            "data": "06/09",
-            "no_prazo": "90",
-            "informacao": "5"
+            "data": "2018-09-06",
+            "no_prazo": 90,
+            "informacao": 5
         },
         {
-            "data": "10/09",
-            "no_prazo": "100",
-            "informacao": "0"
+            "data": "2018-09-10",
+            "no_prazo": 100,
+            "informacao": 0
         },
         {
-            "data": "11/09",
-            "no_prazo": "100",
-            "informacao": "10"
+            "data": "2018-09-11",
+            "no_prazo": 100,
+            "informacao": 10
         },
         {
-            "data": "12/09",
-            "no_prazo": "100",
-            "informacao": "0"
+            "data": "2018-09-12",
+            "no_prazo": 100,
+            "informacao": 0
         },
         {
-            "data": "13/09",
-            "no_prazo": "90",
-            "informacao": "19"
+            "data": "2018-09-13",
+            "no_prazo": 90,
+            "informacao": 19
         },
         {
-            "data": "14/09",
-            "no_prazo": "95",
-            "informacao": "3"
+            "data": "2018-09-14",
+            "no_prazo": 95,
+            "informacao": 3
         },
         {
-            "data": "17/09",
-            "no_prazo": "95",
-            "informacao": "10"
+            "data": "2018-09-17",
+            "no_prazo": 95,
+            "informacao": 10
         },
         {
-            "data": "18/09",
-            "no_prazo": "100",
-            "informacao": "0"
+            "data": "2018-09-18",
+            "no_prazo": 100,
+            "informacao": 0
         },
         {
-            "data": "19/09",
-            "no_prazo": "90",
-            "informacao": "19"
+            "data": "2018-09-19",
+            "no_prazo": 90,
+            "informacao": 19
         },
         {
-            "data": "21/09",
-            "no_prazo": "95",
-            "informacao": "19"
+            "data": "2018-09-21",
+            "no_prazo": 95,
+            "informacao": 19
         },        
         {
-            "data": "24/09",
-            "no_prazo": "95",
-            "informacao": "3"
+            "data": "2018-09-24",
+            "no_prazo": 95,
+            "informacao": 3
         },
         {
-            "data": "25/09",
-            "no_prazo": "95",
-            "informacao": "5"
+            "data": "2018-09-25",
+            "no_prazo": 95,
+            "informacao": 5
         },
         {
-            "data": "26/09",
-            "no_prazo": "100",
-            "informacao": "0"
+            "data": "2018-09-26",
+            "no_prazo": 100,
+            "informacao": 0
         },
         {
-            "data": "27/09",
-            "no_prazo": "100",
-            "informacao": "0"
+            "data": "2018-09-27",
+            "no_prazo": 100,
+            "informacao": 0
         },
         {
-            "data": "28/09",
-            "no_prazo": "65",
-            "informacao": "0"
+            "data": "2018-09-28",
+            "no_prazo": 65,
+            "informacao": 0
         },
         {
-            "data": "01/10",
-            "no_prazo": "0",
-            "informacao": "100"
+            "data": "2018-10-01",
+            "no_prazo": 0,
+            "informacao": 100
         },
         {
-            "data": "02/10",
-            "no_prazo": "100",
-            "informacao": "100"
+            "data": "2018-10-02",
+            "no_prazo": 100,
+            "informacao": 100
         }
     ]
 }
