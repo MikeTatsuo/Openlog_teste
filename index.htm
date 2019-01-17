@@ -11,6 +11,9 @@
     <script src="./jquery/jquery-3.3.1.min.js"></script>
     <script src="./popper/popper.min.js"></script>
     <script src="./bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="./json/mais_util.json"></script>
+    <script type="text/javascript" src="./json/performance.json"></script> -->
+    <script type="text/javascript" src="./js/main.js"></script>
     <title>Openlog - teste</title>
 </head>
 
@@ -20,34 +23,76 @@
         <a class="navbar-brand m-0 p-0" href="#">
             <img src="./images/logo.png" width="auto" height="40">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- conteúdo do menu -->
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav flex-column">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Operações
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Estoque (WMS)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gestão</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Financeiro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ferramentas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cadastros</a>
-                </li>
-            </ul>
+        <div class="btn-group">
+            <button id="menu" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="fas fa-bars"></span>
+            </button>
+            <!-- Conteúdo do menu-->
+            <div class="dropdown-menu dropdown-menu-left tamanho-1">
+                <div class="dropdown-submenu-item dropright">
+                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">Operações</a>
+                    <!-- Submenu -->
+                    <div class="dropdown-submenu dropdown-menu row tamanho-1">
+                        <div class="row">
+                            <div class="col-auto submenu-item mt-2">
+                                <a class="dropdown-item"><b>Emissões e coletas</b></a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Cadastrar pedidos</a>
+                                <a class="dropdown-item" href="#">Conferência na coleta</a>
+                                <a class="dropdown-item" href="#">Receber no centro de distribuição</a>
+                                <a class="dropdown-item" href="#">Gerenciar as coletas</a>
+                            </div>
+                            <div class="col-auto submenu-item mt-2">
+                                <a class="dropdown-item"><b>Manuseio e expedição</b></a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Consolidar</a>
+                                <a class="dropdown-item" href="#">Expedir (Manifesto de tranferência)</a>
+                                <a class="dropdown-item" href="#">MDF-e</a>
+                                <a class="dropdown-item" href="#">Receber na base</a>
+                                <a class="dropdown-item" href="#">Colocar em rota (romaneio)</a>
+                                <a class="dropdown-item" href="#">Conferir expedição</a>
+                            </div>
+                            <div class="col-auto submenu-item mt-2">
+                                <a class="dropdown-item"><b>Finalizações e ocorrências</b></a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Finalizar pedidos</a>
+                                <a class="dropdown-item" href="#">Lançar ocorrências</a>
+                                <a class="dropdown-item" href="#">Arquivar comprovante</a>
+                                <a class="dropdown-item" href="#">Custodiar pedidos</a>
+                                <a class="dropdown-item" href="#">Fragmentar</a>
+                            </div>
+                            <div class="col-auto submenu-item mt-2">
+                                <a class="dropdown-item"><b>Devoluções e outros</b></a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Devolver p/ base origem</a>
+                                <a class="dropdown-item" href="#">Receber devolução</a>
+                                <a class="dropdown-item" href="#">Devolver para cliente (remetente)</a>
+                                <a class="dropdown-item" href="#">Baixar devoluções</a>
+                                <a class="dropdown-item" href="#">Redirecionar pedidos</a>
+                                <a class="dropdown-item" href="#">Enviar para os Correios</a>
+                                <a class="dropdown-item" href="#">Lançar n&ordm; dos correios</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Fim do submenu-->
+                </div>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Estoque (WMS)</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Gestão</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Financeiro</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ferramentas</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Cadastros</a>
+            </div>
+            <!-- Fim do conteúdo do menu-->
         </div>
-        <!-- Final do conteúdo do menu-->
+
         <div class="navbar-item">
             <div class="input-group">
                 <div class="input-group-prepend">
@@ -99,25 +144,24 @@
     <!-- Início do conteúdo da página -->
     <div class="container-fluid">
         <p class="tamanho-2"><span class="fas fa-cogs"></span> Funções mais utilizadas</p>
+<div class="row">
+    <div class="col-1">
+            <button type="button" class="btn"><span class="fas fa-chevron-circle-left"></span></button>
+    </div>
+    <div id="funcoes" class="col-10">
 
-        <nav>
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span class="fas fa-chevron-circle-left" aria-hidden="true"></span>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">Mudar empresa</a></li>
-                <li class="page-item"><a class="page-link" href="#">Pedidos emitidos</a></li>
-                <li class="page-item"><a class="page-link" href="#">Minhas empresas</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span class="fas fa-chevron-circle-right" aria-hidden="true"></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    </div>
+    <div class="col-1">
+            <button type="button" class="btn"><span class="fas fa-chevron-circle-right"></span></button>
 
+    </div>
+</div>
+        <!-- <button type="button" class="btn"><span class="fas fa-chevron-circle-left"></span></button>
+        <button type="button" class="btn btn-outline-secondary">Mudar empresa</button>
+        <button type="button" class="btn btn-outline-secondary">Pedidos enviados</button>
+        <button type="button" class="btn btn-outline-secondary">Minhas empresas</button>
+        <button type="button" class="btn"><span class="fas fa-chevron-circle-right"></span></button> -->
+        
         <p class="tamanho-2"><span class="fas fa-chart-bar"></span> Meus indicadores</p>
         <div class="card">
             <div class="card-header">
