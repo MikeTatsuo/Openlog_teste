@@ -113,16 +113,11 @@ function gerarGrade(grafico, dtInicial, xStart, xEnd, yStart, yEnd) {
     grafico.stroke()
 }
 
-function stringToDate(stringDate) {
-    let data = new Date(stringDate)
-    return data
-}
-
 function dataInicial(performance) {
     let oldest = 0
 
     performance.forEach(function (p) {
-        let data = stringToDate(p.data)
+        let data = new Date(p.data)
         if (oldest == 0 || data < oldest) {
             oldest = data
         }
