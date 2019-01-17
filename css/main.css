@@ -27,11 +27,7 @@
     display: inline-block;
 }
 
-/* .dropdown-submenu:hover {
-    width: max-content;
-    display: inline-block;
+#grafico {
+    width: 100%;
+    height: auto;
 }
-
-.submenu-item:hover {
-    display: inline-block
-} */

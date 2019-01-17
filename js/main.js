@@ -47,10 +47,10 @@ function gerarGrafico() {
     let grafico = canvas.getContext("2d")
 
     getJSON("./json/performance.json").then(function (json) {
-        let xStartpoint = 20
-        let yStartpoint = 5
+        let xStartpoint = 30
+        let yStartpoint = 7.5
         let xEndpoint = grafico.canvas.width;
-        let yEndpoint = grafico.canvas.height - 30;
+        let yEndpoint = grafico.canvas.height - 40;
         gerarGrade(grafico, dataInicial(json.performance), xStartpoint, xEndpoint, yStartpoint, yEndpoint)
         gerarGraficoDados(grafico, json.performance, xStartpoint, xEndpoint, yStartpoint, yEndpoint)
     }).catch(function (erro) {
@@ -62,7 +62,7 @@ function gerarGrade(grafico, dtInicial, xStart, xEnd, yStart, yEnd) {
     let data = dtInicial;
     let xOrigin = xStart - 2;
     let yOrigin = yStart;
-    grafico.font = "5px sans-serif"
+    grafico.font = "7.5px sans-serif"
     grafico.textAlign = "end"
 
     // gera os eixos cartesianos x e y
@@ -102,7 +102,7 @@ function gerarGrade(grafico, dtInicial, xStart, xEnd, yStart, yEnd) {
 
         // legenda (data)
         if (count % 2 == 0) {
-            grafico.fillText(formataData(data), xOrigin, yEnd + 14)
+            grafico.fillText(formataData(data), xOrigin, yEnd + 15)
         } else {
             grafico.fillText(formataData(data), xOrigin, yEnd + 7)
         }
@@ -165,7 +165,7 @@ function gerarGraficoDados(grafico, dados, xStart, xEnd, yStart, yEnd) {
 
         // legenda
         xPosition = (xEnd/4) *path
-        yPosition = yEnd + 21
+        yPosition = yEnd + 25
         texto = path == 1? " % no prazo" : path == 2? " % fora prazo": " % informação no prazo"
         grafico.moveTo(xPosition, yPosition)
         grafico.lineTo(xPosition - 10, yPosition)
